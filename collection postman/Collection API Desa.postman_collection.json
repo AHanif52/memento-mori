@@ -1,0 +1,154 @@
+{
+	"info": {
+		"_postman_id": "95257eee-d34b-4ec5-9fd1-18739a35fd23",
+		"name": "Collection API Desa",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31078516"
+	},
+	"item": [
+		{
+			"name": "GetAllDesa",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/desa/api/desa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desa",
+						"api",
+						"desa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetDesaById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/desa/api/desa/1101010002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desa",
+						"api",
+						"desa",
+						"1101010002"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "InsertDesa",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "district_id",
+							"value": "1101010",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Tegal",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/desa/api/desa/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desa",
+						"api",
+						"desa",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateDesa",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "district_id",
+							"value": "1101010",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "Kajen",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/desa/api/desa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desa",
+						"api",
+						"desa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteDesa",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": []
+				},
+				"url": {
+					"raw": "http://localhost/desa/api/desa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"desa",
+						"api",
+						"desa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
